@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--Customizes the browser window with title and icon for the page, implements bootstrap style-->
+    <title>Cameron's 413 Success Page'</title>
+    <link href="bootstrap/css/style.css" rel="stylesheet" />
+    <link rel="icon" href="img/icon.png" />
+</head>
+<body>
+    <!--Header with my name, followed by a picture of me-->
+    <h1>Cameron Wilson</h1>
+
+    <img src="img/utahsXcks.png" />
+
+    <!--Paragraph describing what I hope for in the class followed by list of jobs I'm looking for, unordered-->
+    <p>I hope to feel confident in another programming language. I trust that I will grow in my confidence to create something great out of nothing!</p>
+
+    <br />
+
+    <p>The jobs I'm looking for:</p>
+    <ul>
+        <li>Technology Consultant</li>
+        <li>Data Analyst</li>
+        <li>Cyber Security</li>
+    </ul>
+
+    <!--Form to enter in scores based on each category of the class, accepts user input and calls javascript function-->
+    <h2>Grade Calculator</h2>
+    <form>
+        <label>% Assignments:</label>
+        <input id="assignment" type="number" /><br />
+        <label>% Group Project:</label>
+        <input id="gproject" type="number" /><br />
+        <label>% Quizzes:</label>
+        <input id="quiz" type="number" /><br />
+        <label>% Midterm Exam:</label>
+        <input id="midterm" type="number" /><br />
+        <label>% Final Exam:</label>
+        <input id="final" type="number" /><br />
+        <label>% INTEX:</label>
+        <input id="intex" type="number" /><br />
+        <input id="calc" type="button" value="Calculate Grade" />
+        <br />
+        <!--Displays message based on grade calculated-->
+        <label id="grade" name="grade"></label>
+    </form>
+
+    <!--Javascript files are integrated here-->
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="js/gradecalc.js"></script>
+
+</body>
+</html>
